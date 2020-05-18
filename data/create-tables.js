@@ -17,12 +17,33 @@ async function run() {
                     email VARCHAR(256) NOT NULL,
                     hash VARCHAR(512) NOT NULL
                 );           
-                CREATE TABLE animals (
+                CREATE TABLE locations (
                     id SERIAL PRIMARY KEY NOT NULL,
-                    name VARCHAR(512) NOT NULL,
-                    cool_factor INTEGER NOT NULL,
-                    owner_id INTEGER NOT NULL REFERENCES users(id)
+                    location_name VARCHAR(512) NOT NULL,
+                    location_image VARCHAR(512) NOT NULL,
+                    location_description VARCHAR(512) NOT NULL,
+                    been_visited BOOLEAN NOT NULL,
+            );  
+                CREATE TABLE events (
+              id SERIAL PRIMARY KEY NOT NULL,
+              planet_id INTEGER NOT NULL,
+              event_name VARCHAR(512) NOT NULL,
+              event_image VARCHAR(512) NOT NULL,
+              event_description VARCHAR(512) NOT NULL,
+              event_choices 
             );
+            CREATE TABLE ship-choices (
+              id SERIAL PRIMARY KEY NOT NULL,
+              ship_name VARCHAR(512) NOT NULL,
+              ship_image VARCHAR(512) NOT NULL,
+              ship_fuel INTEGER NOT NULL,
+              ship_hull INTEGER NOT NULL,
+              base_combat INTEGER NOT NULL,
+              base_diplomacy INTEGER NOT NULL,
+              base_science INTEGER NOT NULL,
+              used_item_slots INTEGER NOT NULL,
+              max_item_slots INTEGER NOT NULL,
+              been_visited BOOLEAN NOT NULL,
         `);
 
     console.log('create tables complete', getEmoji(), getEmoji(), getEmoji());
