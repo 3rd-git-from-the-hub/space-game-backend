@@ -30,7 +30,7 @@ async function run() {
               event_name VARCHAR(512) NOT NULL,
               event_image VARCHAR(512) NOT NULL,
               event_description VARCHAR(512) NOT NULL,
-              event_choices 
+              event_choices VARCHAR(512) ARRAY NOT NULL
             );
             CREATE TABLE ship-choices (
               id SERIAL PRIMARY KEY NOT NULL,
@@ -43,7 +43,6 @@ async function run() {
               base_science INTEGER NOT NULL,
               used_item_slots INTEGER NOT NULL,
               max_item_slots INTEGER NOT NULL,
-              been_visited BOOLEAN NOT NULL,
         `);
 
     console.log('create tables complete', getEmoji(), getEmoji(), getEmoji());
