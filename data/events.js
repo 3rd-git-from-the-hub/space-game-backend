@@ -124,24 +124,25 @@ module.exports = [
         failure_fuel: -1,
         failure_credit: 0,
         failure_health: 0,
+      }] 
+    },
+    {
+      choice_description: 'You decide to search the ancient abandoned city for any useful supplies.',
+      roll_needed: 5,
+      roll_type: 'science',
+      result: [{
+        sucess: 'You use your science tools at your disposal to scan the surrounding buildings. Your scanner goes off and you find a old research laboratory with a cacheful of supplies!',
+        failure: 'It seems the city has already been ravaged by scavengers. Time to move on.'
+      }],
+      rewards: [{
+        success_fuel: 1,
+        success_credit: 3,
+        success_health: 0,
+        failure_fuel: 0,
+        failure_credit: -1,
+        failure_health: 0,
       }] }
     ]
-  },
-  {
-    choice_description: 'You decide to search the ancient abandoned city for any useful supplies.',
-    roll_needed: 5,
-    roll_type: 'science',
-    result: [{
-      sucess: 'You use your science tools at your disposal to scan the surrounding buildings. Your scanner goes off and you find a old research laboratory with a cacheful of supplies!',
-      failure: 'It seems the city has already been ravaged by scavengers. Time to move on.'
-    }],
-    rewards: [{
-      success_fuel: 1,
-      success_credit: 3,
-      success_health: 0,
-      failure_fuel: 0,
-      failure_credit: -1,
-      failure_health: 0,
-    }] }
+  }
 ];
   
