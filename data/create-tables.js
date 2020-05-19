@@ -15,7 +15,10 @@ async function run() {
                 CREATE TABLE users (
                     id SERIAL PRIMARY KEY,
                     email VARCHAR(256) NOT NULL,
-                    hash VARCHAR(512) NOT NULL
+                    hash VARCHAR(512) NOT NULL,
+                    game_id INTEGER,
+                    user_ship VARCHAR(512)
+
                 );           
                 CREATE TABLE locations (
                     id SERIAL PRIMARY KEY NOT NULL,
