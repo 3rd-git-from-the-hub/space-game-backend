@@ -25,7 +25,6 @@ async function run() {
                     location_type VARCHAR(512) NOT NULL,
                     location_image VARCHAR(512) NOT NULL,
                     location_description VARCHAR(512) NOT NULL,
-                    been_visited BOOLEAN NOT NULL,
                     event_id INTEGER NOT NULL UNIQUE
             );  
                 CREATE TABLE events (

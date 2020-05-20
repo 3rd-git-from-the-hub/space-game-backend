@@ -8,7 +8,8 @@ module.exports = [
     base_diplomacy: 4,
     base_science: 2,
     used_item_slots: 0,
-    max_item_slots: 3
+    max_item_slots: 3,
+    planet_visited: []
   },
   {
     ship_name: 'The Enterprise2',
@@ -19,6 +20,7 @@ module.exports = [
     base_diplomacy: 4,
     base_science: 2,
     used_item_slots: 0,
-    max_item_slots: 3
+    max_item_slots: 3,
+    planet_visited: []
   }
 ];
