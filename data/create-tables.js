@@ -18,7 +18,14 @@ async function run() {
                     hash VARCHAR(512) NOT NULL,
                     user_ship VARCHAR(512)
 
-                );           
+                );
+                  CREATE TABLE loggedinuser (
+                    id SERIAL PRIMARY KEY,
+                    name VARCHAR(512) NOT NULL,
+                    score INTEGER NOT NULL,
+                    owner_id INTEGER NOT NULL REFERENCES users(id)
+                  );
+
                 CREATE TABLE locations (
                     id SERIAL PRIMARY KEY NOT NULL,
                     location_name VARCHAR(512) NOT NULL,
