@@ -13,6 +13,7 @@ async function run() {
             DROP TABLE IF EXISTS locations CASCADE;
             DROP TABLE IF EXISTS events;
             DROP TABLE IF EXISTS shipchoices;
+            DROP TABLE IF EXISTS loggedinuser;
         `);
 
     console.log(' drop tables complete', getEmoji(), getEmoji(), getEmoji());
