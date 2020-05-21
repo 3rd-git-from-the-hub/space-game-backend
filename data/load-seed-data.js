@@ -13,8 +13,8 @@ async function run() {
   try {
     await client.connect();
 
-    
 
+    
     const users = await Promise.all(
       usersData.map(user => {
         return client.query(`
@@ -26,7 +26,7 @@ async function run() {
       })
     );
     const user = users[0].rows[0];
-
+    
     await Promise.all(
       locations.map(location => {
         return client.query(`
