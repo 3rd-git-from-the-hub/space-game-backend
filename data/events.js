@@ -228,7 +228,7 @@ module.exports = [
     event_name: 'Harvesting Gas',
     planet_id: 7,
     event_image: 'https://vignette.wikia.nocookie.net/warframe/images/e/ee/Plains_of_Eidolon_at_Day_%282%29.jpg/revision/latest?cb=20180717001626',
-    event_description: 'You land your ship on Noxabas I and take in the sceneray. It seems these large fissures are realising some type of gas. It could probably help fuel your ship.',
+    event_description: 'You land your ship on Noxabas I and take in the scenery. It seems these large fissures are realising some type of gas. It could probably help fuel your ship.',
     event_choices: [{
       choice_description: 'You see in the distance a alien looking facility. Perhaps they are friendly?',
       roll_needed: 5,
