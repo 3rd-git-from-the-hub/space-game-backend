@@ -45,7 +45,6 @@ async function run() {
             CREATE TABLE shipchoices (
               id SERIAL PRIMARY KEY NOT NULL,
               ship_name VARCHAR(512) NOT NULL,
-              ship_image VARCHAR(512) NOT NULL,
               ship_fuel INTEGER NOT NULL,
               ship_hull INTEGER NOT NULL,
               base_combat INTEGER NOT NULL,
