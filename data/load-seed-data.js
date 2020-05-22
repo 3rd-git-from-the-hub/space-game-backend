@@ -14,7 +14,7 @@ async function run() {
     await client.connect();
 
 
-    
+
     const users = await Promise.all(
       usersData.map(user => {
         return client.query(`
@@ -50,10 +50,10 @@ async function run() {
     await Promise.all(
       shipChoices.map(ship => {
         return client.query(`
-                    INSERT INTO shipchoices (ship_name, ship_image, ship_fuel, ship_hull, base_combat, base_diplomacy, base_science, used_item_slots, max_item_slots)
-                    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9);
+                    INSERT INTO shipchoices (ship_name, ship_fuel, ship_hull, base_combat, base_diplomacy, base_science, used_item_slots, max_item_slots)
+                    VALUES ($1, $2, $3, $4, $5, $6, $7, $8);
                 `,
-        [ship.ship_name, ship.ship_image, ship.ship_fuel, ship.ship_hull, ship.base_combat, ship.base_diplomacy, ship.base_science, ship.used_item_slots, ship.max_item_slots]);
+        [ship.ship_name, ship.ship_fuel, ship.ship_hull, ship.base_combat, ship.base_diplomacy, ship.base_science, ship.used_item_slots, ship.max_item_slots]);
       })
     );
     

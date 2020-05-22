@@ -38,8 +38,8 @@ async function run() {
               id SERIAL PRIMARY KEY NOT NULL,
               planet_id INTEGER REFERENCES locations(event_id),
               event_name VARCHAR(512) NOT NULL,
-              event_image VARCHAR(512) NOT NULL,
-              event_description VARCHAR(512) NOT NULL,
+              event_image VARCHAR(1000) NOT NULL,
+              event_description VARCHAR(2000) NOT NULL,
               event_choices VARCHAR(5000) ARRAY NOT NULL
             );
             CREATE TABLE shipchoices (

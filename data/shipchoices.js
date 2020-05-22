@@ -1,38 +1,32 @@
 module.exports = [
   {
-    ship_name: 'diplomacy',
-    ship_image: 'im an image',
+    ship_name: 'The Reach',
     ship_fuel: 4,
-    ship_hull: 10,
-    base_combat: 2,
-    base_diplomacy: 4,
+    ship_hull: 6,
+    base_combat: 1,
+    base_diplomacy: 3,
     base_science: 2,
     used_item_slots: 0,
     max_item_slots: 3,
-    planet_visited: []
   },
   {
-    ship_name: 'combat',
-    ship_image: 'im an image',
+    ship_name: 'The Avenger',
     ship_fuel: 4,
-    ship_hull: 10,
-    base_combat: 2,
-    base_diplomacy: 4,
-    base_science: 2,
+    ship_hull: 6,
+    base_combat: 3,
+    base_diplomacy: 2,
+    base_science: 1,
     used_item_slots: 0,
-    max_item_slots: 3,
-    planet_visited: []
+    max_item_slots: 3
   },
   {
-    ship_name: 'science',
-    ship_image: 'im an image',
+    ship_name: 'The Icarus',
     ship_fuel: 4,
-    ship_hull: 10,
-    base_combat: 2,
-    base_diplomacy: 4,
-    base_science: 2,
+    ship_hull: 6,
+    base_combat: 1,
+    base_diplomacy: 2,
+    base_science: 3,
     used_item_slots: 0,
-    max_item_slots: 3,
-    planet_visited: []
+    max_item_slots: 3
   }
 ];
