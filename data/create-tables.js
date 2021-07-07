@@ -11,6 +11,7 @@ async function run() {
     await client.connect();
 
     // run a query to create tables
+    // Wow!! Look at this data model! So much complexity. My only concern: is it necessary to track the loggedinuser in its own table?
     await client.query(`
                 CREATE TABLE users (
                     id SERIAL PRIMARY KEY,
@@ -53,7 +54,7 @@ async function run() {
               used_item_slots INTEGER NOT NULL,
               max_item_slots INTEGER NOT NULL
             );
-        `);
+        `); // Generally, the SQL standard would have put ship_choices in snake case
 
     console.log('create tables complete', getEmoji(), getEmoji(), getEmoji());
   }

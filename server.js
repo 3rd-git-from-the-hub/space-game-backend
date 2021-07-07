@@ -1,3 +1,5 @@
+// Did you end up running postman tests and screenshots of your passing tests?
+
 require('dotenv').config();
 require('./lib/client').connect();
 
